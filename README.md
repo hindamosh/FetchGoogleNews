@@ -1,11 +1,11 @@
 # FetchGoogleNews
-Fetch Google News RSS in JSON format using Python
+Fetch Google News RSS in csv format using Python Pandas 0.25
 
 
 Search through Google News with the "search_term" and get the headlines and the contents of the news that was released today, this week, this month, or this year ("date_filter"). 
 
 ```python
-get_news_data(search_term, data_filter)
+get_news(search_term, data_filter)
 ```
 
 ### Parameters
@@ -17,5 +17,7 @@ date_filter  -  date that will filter available news
                    'this_week' - get headlines of the news that are released in this week 
                    'this month' - news released in this month 
                    'this_year' - news released in this year
-                   number - news released in number of days ago
+                   number - int or str news released in number of days ago
+                   or use '' to extract all
+                   
 ```
